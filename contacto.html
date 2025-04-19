@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.bundle.min.js" defer></script>
+    <link rel="stylesheet" href="contacto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Chronos</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md bg-body-tertiary nav-estilo">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand color-letras" href="index.html">
+                    <img src="imagenes/S.png" class="w-25">
+                </a>
+
+                <!-- Botón para colapsar menú en pantallas pequeñas -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menú colapsable -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active color-letras dropdown-toggle" href="#" id="productosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu animate__animated animate__fadeIn " aria-labelledby="productosDropdown">
+                                <li><a class="dropdown-item" href="#">Todos</a></li>
+                                <li><a class="dropdown-item" href="#">Remeras</a></li>
+                                <li><a class="dropdown-item" href="#">Pantalones</a></li>
+                                <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link color-letras" href="#">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link color-letras" href="#">Ingresos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link color-letras" href="#">Contacto</a>
+                        </li>
+                    </ul>
+
+                    <!-- Formulario de búsqueda centrado -->
+                    <form class="d-flex mx-auto" role="search">
+                        <input class="form-control me-2" type="search" placeholder="¿Qué estás buscando?" aria-label="Buscar">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                    
+                    <!-- Sección derecha: Carrito -->
+                    <ul class="navbar-nav ms-auto">
+                        <a class="nav-link color-letras" href="#">
+                            <i class="fa-solid fa-cart-shopping"></i> Carrito
+                        </a>                        
+                    </ul>
+                </div>
+            </div>
+        </nav> 
+    </header>
+    <main>
+        <h1 class="text-center letra-form">Formulario de Contacto</h1>
+        <form class="container mt-4 bg-body-tertiary">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" placeholder="tucorreo@example.com" required>
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+        
+        
+    </main>
+</body>
+</head>
+</html>
